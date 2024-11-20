@@ -1,6 +1,6 @@
 ## Paso a paso para probar este proyecto en tu ordenador
 
-ANTES DE TODO PASATE POR ESTE VIDEO PARA VER EL SISTEMA DE AGENTES EN ACCION
+VER EL SISTEMA DE AGENTES EN ACCION
 
 https://www.linkedin.com/posts/saul-gomez-jimenez-47b30328b_as%C3%AD-estoy-aplicando-agentes-para-la-b%C3%BAsqueda-activity-7265020584839761920-dZ70/?originalSubdomain=es
 
