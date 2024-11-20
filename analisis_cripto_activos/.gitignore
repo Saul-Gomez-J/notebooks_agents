@@ -1,0 +1,103 @@
+.env
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+/alex_analisis_assets
+# C extensions
+*.so
+
+# Distribución / empaquetado
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Instalaciones de Python específicas del usuario
+*.manifest
+*.spec
+
+# Archivos de entorno virtual
+venv/
+ENV/
+env/
+.venv/
+.ENV/
+env.bak/
+venv.bak/
+
+# Configuración de editor
+*.swp
+*.swo
+*~ 
+*.sublime-project
+*.sublime-workspace
+.vscode/
+
+# Archivos de registro
+*.log
+
+# Bases de datos
+*.sqlite3
+
+# Archivos de prueba
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Configuración de entornos
+.env
+.venv
+.env.*
+.venv.*
+
+# Configuración de despliegue
+instance/
+.webassets-cache
+scrapy.cfg
+
+# Configuración de Jupyter Notebook
+.ipynb_checkpoints
+
+# Archivos de MyPy y otros tipos
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Archivos de perfilado
+.prof
+
+# Archivos de IPython
+.ipython/
+
+# Archivos de PyCharm
+.idea/
+
+# Archivos creados por programas de terceros como Docker
+docker-compose.override.yml
+
+# Archivos temporales
+tmp/
+temp/
+# Ignorar el archivo output.txt
+output.txt
+
+# Ignorar todos los archivos con la extensión .tct
+*.txt
+/data
+/pruebas

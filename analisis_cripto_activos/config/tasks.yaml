@@ -1,0 +1,143 @@
+recopilacion_informacion_activo:
+  description: >
+    Recopila toda la información básica y esencial sobre el criptoactivo seleccionado, incluyendo:
+
+    - **Nombre Completo**: Obtén el nombre completo del activo crypto.
+    - **Símbolo o Ticker**: Identifica el símbolo o ticker del activo (por ejemplo, BTC para Bitcoin).
+    - **Capitalización de Mercado**: Evalúa la capitalización de mercado actual en USD.
+    - **Volumen de Trading Diario**: Recoge datos del volumen de trading diario en los principales exchanges.
+    - **Liquidez**: Valora la liquidez del activo en una escala de 0 a 10.
+    - **Rendimiento Histórico**: Proporciona una breve descripción del rendimiento histórico del activo (opcional).
+
+    IMPORTANTE: Nunca escribas un dato si no has encontrado la información concreta sobre él, en ese caso escribe (no he encontrado información
+    sobre ese dato)
+
+    criptoactivo: {activo} 
+
+  expected_output: >
+    Un breve informe que incluya:
+    - **Nombre Completo** del criptoactivo.
+    - **Símbolo o Ticker** del criptoactivo.
+    - **Capitalización de Mercado** actual en USD.
+    - **Volumen de Trading Diario** en los principales exchanges.
+    - **Valoración de la Liquidez** en una escala de 0 a 10.
+    - **Descripción del Rendimiento Histórico** del activo (si se proporciona).
+
+    IMPORTANTE: Indica siempre el enlace que has utilizado para sacar la informacion
+
+  agent: agente_informacion_activo
+
+analisis_tecnico_activo:
+  description: >
+    Realiza un análisis técnico detallado del comportamiento reciente del precio del activo, incluyendo:
+
+    - **Tendencia de Precio Reciente**: Describe si la tendencia es alcista, bajista o estable.
+    - **Niveles Clave de Soporte y Resistencia**: Identifica y señala los niveles clave de soporte y resistencia en el gráfico de precios.
+    - **Volatilidad del Activo**: Mide la volatilidad del activo en los últimos 30 días, proporcionando un valor numérico o una descripción cualitativa.
+    - **Media Móvil de 50 días:**: [Valor actual]
+    - **Media Móvil de 200 días:** [Valor actual]
+
+    Piensa que el lector debe entender profundamente el proyecto.
+    IMPORTANTE: Nunca escribas un dato si no has encontrado la información concreta sobre él, en ese caso escribe (no he encontrado información
+    sobre ese dato)
+    
+    criptoactivo: {activo}
+
+  expected_output: >
+    Un informe de análisis técnico que incluya:
+    - **Tendencia de Precio Reciente**: Indicando si es alcista, bajista o estable.
+    - **RSI (Índice de Fuerza Relativa)**: [Valor actual del RSI]
+    - **Media Móvil de 50 días:**: [Valor actual]
+    - **Media Móvil de 200 días:** [Valor actual]
+    - **Niveles Clave de Soporte y Resistencia**: Listado de los principales niveles identificados.
+    - **Medida de Volatilidad**: Valor de volatilidad en los últimos 30 días o una descripción de la misma.
+    - **Analisis final**: Genera un analisis con insight valiosos en base a la informacion recibida.
+    IMPORTANTE: Indica siempre el enlace que has utilizado para sacar la informacion
+
+  agent: agente_analisis_tecnico
+
+analisis_fundamental_proyectos_empresas:
+  description: >
+    Realiza un análisis preliminar de proyectos y empresas, verificando información clave mediante:
+
+    - **Análisis Preliminar**: Evalúa los proyectos y empresas seleccionados para determinar su viabilidad.
+    - **Verificación de Información Clave**: Revisa información esencial como documentos legales, financieros y técnicos.
+    - **Uso de IA**: Utiliza inteligencia artificial para analizar los documentos mencionados.
+    - **Identificación de Alertas**: Detecta posibles alertas o riesgos en los documentos analizados.    
+    IMPORTANTE: Nunca escribas un dato si no has encontrado la información concreta sobre él, en ese caso escribe (no he encontrado información
+    sobre ese dato)
+
+    criptoactivo: {activo} 
+
+  expected_output: >
+    Un informe de análisis fundamental que incluya:
+    - **Resumen del Proyecto o Empresa**: Descripción general y objetivos.
+    - **Información Legal**: Detalles relevantes de documentos legales revisados.
+    - **Información Financiera**: Resumen de datos financieros analizados.
+    - **Información Técnica**: Aspectos técnicos evaluados.
+    - **Alertas y Riesgos Identificados**: Listado de posibles alertas o riesgos detectados durante el análisis.
+    - **Conclusion**: Insight valiosos en base a la informacion obtenida sobre el activo.
+
+    Piensa que el lector debe entender profundamente el proyecto.
+    
+    IMPORTANTE: Indica siempre el enlace que has utilizado para sacar la informacion
+
+  agent: agente_analisis_fundamental
+
+
+creacion_graficos_activo:
+  description: >
+    Genera gráficos visuales con los datos proporcionados que representen aspectos clave del activo seleccionado, incluyendo:
+  
+    - **Gráfico de Precio Actual**: Crea una imagen en formato PNG/SVG que muestre la evolución del precio del activo en el último mes.
+    - **Gráfico de Volatilidad**: Genera una imagen en formato PNG/SVG que ilustre la volatilidad del activo en los últimos 30 días.
+    - **Gráficos Adicionales**: Incluye gráficos relevantes adicionales, como el volumen de trading o las tendencias históricas del activo.
+    
+    criptoactivo: {activo}
+
+    
+
+  expected_output: >
+    - **Gráfico de Precio Actual**: Imagen en formato PNG/SVG mostrando la evolución del precio en el último mes.
+    - **Gráfico de Volatilidad**: Imagen en formato PNG/SVG ilustrando la volatilidad reciente.
+    - **Gráficos Adicionales**: Por ejemplo, gráfico de volumen de trading u otras representaciones visuales relevantes.
+
+
+  
+compilacion_reporte_final:
+  description: >
+    Integra toda la información y los gráficos recopilados por los agentes anteriores en un informe completo y bien estructurado, incluyendo:
+  
+    - **Recopilación de Datos**:
+      - Obtén los datos de **Información del Activo**.
+      - Obtén los análisis de **Análisis Técnico**.
+      - Obtén los análisis de **Análisis Fundamental**.
+    
+    - **Inserción de Gráficos**:
+      - Inserta los gráficos generados por el agente de **Creación de Gráficos** en las secciones correspondientes del informe.
+    
+    - **Formateo del Reporte**:
+      - Organiza el contenido de manera lógica y coherente.
+      - Asegúrate de que el diseño sea profesional y fácil de leer.
+      - Revisa la consistencia en el estilo y formato a lo largo del documento.
+      
+    El reporte debe ser lo mas completo posible para que el lector acabe con una vision global de que es y como funciona el activo o proyecto.
+
+      criptoactivo: {activo}
+  
+  expected_output: >
+     Un comprensivo reporte final con los siguientes apartados:
+     1.Introducción: explicas que es el proyecto y cuál es su propuesta de valor.
+     2. Análisis del Activo
+     3. Análisis Técnico
+     4. Análisis fundamental
+     5. Conclusión: Resumen General: Síntesis de los puntos más relevantes del informe.
+     6. Fuentes Listado de Fuentes: Enumeración detallada de todas las fuentes consultadas, incluyendo enlaces y fechas de acceso.
+
+     Incluye siempre los insights de cada uno de los análisis.
+     Don't add '```' or '```markdown' to the report. Hazlo en español.
+
+  agent: agente_compilacion_reporte_final
+
+
+
